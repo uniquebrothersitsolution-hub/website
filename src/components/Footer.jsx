@@ -11,7 +11,7 @@ const Footer = () => {
                         <span className="brand-name">UNIQUE <span className="red">BROTHERS</span></span>
                     </div>
                     <p className="footer-desc">
-                        The #1 destination for LED design, high-quality stickers, and personalized gifts in Thittacherry. Professional computer services you can trust.
+                        The #1 destination for LED design, high-quality stickers, and personalized gifts in Thittacherry. Professional computer services and expert design by Founder Shaher.
                     </p>
                 </div>
 
