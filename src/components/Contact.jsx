@@ -12,27 +12,33 @@ const Contact = () => {
 
                 <div className="contact-container">
                     <div className="contact-info">
-                        <div className="info-item">
-                            <span className="info-icon">📍</span>
-                            <div>
-                                <h4>Our Location</h4>
-                                <p>90, Main Road, Thittacherry, Tamil Nadu 609703</p>
+                        <a href="https://maps.app.goo.gl/6rGLtw517UEiZvex5?g_st=ic" target="_blank" rel="noopener noreferrer" className="info-item-link">
+                            <div className="info-item">
+                                <span className="info-icon">📍</span>
+                                <div>
+                                    <h4>Our Location</h4>
+                                    <p>90, Main Road, Thittacherry, TN 609703</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="info-item">
-                            <span className="info-icon">📞</span>
-                            <div>
-                                <h4>Call Us</h4>
-                                <p><a href="tel:+918270150033">+91 82701 50033</a></p>
+                        </a>
+                        <a href="tel:+918270150033" className="info-item-link">
+                            <div className="info-item">
+                                <span className="info-icon">📞</span>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>+91 82701 50033</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="info-item">
-                            <span className="info-icon">📧</span>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:shashaher07@gmail.com">shashaher07@gmail.com</a></p>
+                        </a>
+                        <a href="mailto:shashaher07@gmail.com" className="info-item-link">
+                            <div className="info-item">
+                                <span className="info-icon">📧</span>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>shashaher07@gmail.com</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
                         <a href="https://wa.me/918270150033" className="whatsapp-cta">
                             <span>Send Message on WhatsApp</span>
@@ -61,6 +67,20 @@ const Contact = () => {
                         </div>
                         <button type="submit" className="btn-primary">Send Message</button>
                     </form>
+                </div>
+
+                <div className="map-section">
+                    <div className="map-card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.4840186!2d79.79!3d10.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556d!2zMTDCsDUxJzAwLjAiTiA3OcKwNDYnNDguMCJF!5e0!3m2!1sen!2sin!4v1715000000"
+                            width="100%"
+                            height="450"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            title="Unique Brothers Location"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </section>
