@@ -11,7 +11,7 @@ const Hero = () => {
                         <span className="blue">Computer Centre</span> in Thittacherry
                     </h1>
                     <p className="hero-subtitle">
-                        Crafting premium LED boards, custom stickers, and unique gifts. Your local hub for expert designing by Founder Shaher (Shahir Graphic Designer), computer services, and money transfers.
+                        Crafting premium LED boards, custom stickers, and unique gifts. Your local hub in Thittacherry (Thittacheri) operated by Founder Shaher. Expert designing and computer services.
                     </p>
                     <div className="hero-btns">
                         <a href="#portfolio" className="btn-primary">View Our Work</a>
