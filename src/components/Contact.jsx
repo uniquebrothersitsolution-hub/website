@@ -72,7 +72,7 @@ const Contact = () => {
                 <div className="map-section">
                     <div className="map-card">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.4840186!2d79.79!3d10.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556d!2zMTDCsDUxJzAwLjAiTiA3OcKwNDYnNDguMCJF!5e0!3m2!1sen!2sin!4v1715000000"
+                            src="https://www.google.com/maps?q=Unique+Brothers+LED+Design+Thittacherry+90+Main+Road&output=embed"
                             width="100%"
                             height="450"
                             style={{ border: 0 }}
