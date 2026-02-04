@@ -43,7 +43,8 @@ const Footer = () => {
                     <p>&copy; {new Date().getFullYear()} Unique Brothers. All Rights Reserved.</p>
                     <div className="socials">
                         <a href="https://www.instagram.com/unique_brothers__" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a href="#">Facebook</a>
+                        <a href="tel:+918270150033" title="Call Us">Call</a>
+                        <a href="mailto:shashaher07@gmail.com" title="Email Us">Email</a>
                         <a href="https://wa.me/918270150033">WhatsApp</a>
                     </div>
                 </div>

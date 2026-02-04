@@ -23,14 +23,14 @@ const Contact = () => {
                             <span className="info-icon">📞</span>
                             <div>
                                 <h4>Call Us</h4>
-                                <p>+91 82701 50033</p>
+                                <p><a href="tel:+918270150033">+91 82701 50033</a></p>
                             </div>
                         </div>
                         <div className="info-item">
                             <span className="info-icon">📧</span>
                             <div>
                                 <h4>Email</h4>
-                                <p>shashaher07@gmail.com</p>
+                                <p><a href="mailto:shashaher07@gmail.com">shashaher07@gmail.com</a></p>
                             </div>
                         </div>
 
