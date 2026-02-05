@@ -11,14 +11,14 @@ const Footer = () => {
                         <span className="brand-name">UNIQUE <span className="red">BROTHERS</span></span>
                     </div>
                     <p className="footer-desc">
-                        The #1 destination for LED design, stickers, and gifts in Thittacherry (Thittacheri). Professionally operated by Founder Shaher.
+                        The #1 destination for <strong>best LED design</strong>, <strong>best graphics design</strong>, and <strong>E-Sevai</strong> in Thittacheri & Nagapattinam. Professionally operated by Founder Shaher.
                     </p>
                 </div>
 
                 <div className="footer-links">
                     <h4>Our Regions</h4>
                     <ul>
-                        <li><a href="#">Thittacherry</a></li>
+                        <li><a href="#">Thittacheri</a></li>
                         <li><a href="#">Nagapattinam</a></li>
                         <li><a href="#">Mayiladurai</a></li>
                         <li><a href="#">Thanjavur</a></li>

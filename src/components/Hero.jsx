@@ -8,10 +8,10 @@ const Hero = () => {
                 <div className="hero-content">
                     <h1 className="hero-title">
                         Best <span className="red">LED Design</span> & <br />
-                        <span className="blue">Computer Centre</span> in Thittacherry
+                        <span className="blue">Computer Centre</span> in Thittacheri
                     </h1>
                     <p className="hero-subtitle">
-                        Crafting premium LED boards, custom stickers, and unique gifts. Your local hub in Thittacherry (Thittacheri) operated by Founder Shaher. Expert designing and computer services.
+                        Experience the <strong>best graphics design</strong> and <strong>best LED design in Nagapattinam</strong>. Your trusted local hub in Thittacheri for <strong>E-Sevai services</strong>, custom stickers, and professional computer assistance, operated by Founder Shaher.
                     </p>
                     <div className="hero-btns">
                         <a href="#portfolio" className="btn-primary">View Our Work</a>

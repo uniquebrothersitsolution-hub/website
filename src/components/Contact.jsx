@@ -17,7 +17,7 @@ const Contact = () => {
                                 <span className="info-icon">📍</span>
                                 <div>
                                     <h4>Our Location</h4>
-                                    <p>90, Main Road, Thittacherry, TN 609703</p>
+                                    <p>90, Main Road, Thittacheri, TN 609703</p>
                                 </div>
                             </div>
                         </a>
@@ -72,7 +72,7 @@ const Contact = () => {
                 <div className="map-section">
                     <div className="map-card">
                         <iframe
-                            src="https://www.google.com/maps?q=Unique+Brothers+LED+Design+Thittacherry+90+Main+Road&output=embed"
+                            src="https://www.google.com/maps?q=Unique+Brothers+LED+Design+Thittacheri+90+Main+Road&output=embed"
                             width="100%"
                             height="450"
                             style={{ border: 0 }}

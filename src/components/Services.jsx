@@ -11,21 +11,21 @@ const services = [
     },
     {
         title: "Smart Card Service",
-        description: "Correction, Adding/Removing members, and new applications for Family Smart Cards.",
+        description: "Your trusted E-Sevai center in Thittacheri. Correction, Adding/Removing members, and new applications for Family Smart Cards.",
         icon: "🪪",
         image: "/smart-card.png",
         tag: "Pro Service"
     },
     {
         title: "Passport Service",
-        description: "Apply for new passport, renewal, name change, and address correction easily.",
+        description: "Apply for new passport, renewal, name change, and address correction via our E-Sevai point.",
         icon: "🛂",
         image: "/passport.png",
         tag: "Premium"
     },
     {
         title: "Pan Card Service",
-        description: "New PAN applications, name/photo correction, and date of birth updates.",
+        description: "Best PAN card services in Nagapattinam. New applications, name/photo correction, and DOB updates.",
         icon: "💳",
         image: "/pan-card.png",
         tag: "Instant"
@@ -48,11 +48,11 @@ const services = [
         title: "Unique Gifts",
         description: "Personalized gift packing and custom items for birthdays, anniversaries, and more.",
         icon: "🎁",
-        tag: "Best Packing"
+        tag: "Best Graphics Design"
     },
     {
         title: "Computer Centre",
-        description: "Professional browsing, typing, and all online application services with expert assistance.",
+        description: "The best computer centre in Thittacheri. Professional browsing, typing, and all online application services via E-Sevai.",
         icon: "💻",
         tag: "Best Service"
     }
@@ -64,7 +64,7 @@ const Services = () => {
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Our <span className="red">Expert</span> Services</h2>
-                    <p className="section-subtitle">We offer a wide range of creative and utility services catering to your personal and business needs in Thittacherry.</p>
+                    <p className="section-subtitle">We offer the <strong>best graphics design in Nagapattinam</strong> and a wide range of creative and utility services catering to your personal and business needs in Thittacheri.</p>
                 </div>
                 <div className="services-grid">
                     {services.map((service, index) => (
