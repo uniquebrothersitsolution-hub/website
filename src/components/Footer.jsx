@@ -7,8 +7,7 @@ const Footer = () => {
             <div className="container footer-content">
                 <div className="footer-brand">
                     <div className="logo-section">
-                        <img src="/logo.png" alt="Unique Brothers Logo" className="logo" />
-                        <span className="brand-name">UNIQUE <span className="red">BROTHERS</span></span>
+                        <img src="/logo.svg" alt="Unique Brothers Logo" className="logo" />
                     </div>
                     <p className="footer-desc">
                         The #1 destination for <strong>best LED design</strong>, <strong>best graphics design</strong>, and <strong>E-Sevai</strong> in Thittacheri & Nagapattinam. Professionally operated by Founder Shaher.

@@ -6,8 +6,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     <nav className="navbar">
       <div className="container nav-content">
         <div className="logo-section">
-          <img src="/logo.png" alt="Unique Brothers Logo" className="logo" />
-          <span className="brand-name">UNIQUE <span className="red">BROTHERS</span></span>
+          <img src="/logo.svg" alt="Unique Brothers Logo" className="logo" />
         </div>
 
         <ul className="nav-links">
