@@ -7,11 +7,11 @@ const Hero = () => {
             <div className="container hero-container">
                 <div className="hero-content">
                     <h1 className="hero-title">
-                        Best <span className="red">LED Design</span> & <br />
-                        <span className="blue">Computer Centre</span> in Thittacheri
+                        Best <span className="red">E-Sevai Centre</span> & <br />
+                        <span className="blue">Graphic Design</span> in Nagapattinam
                     </h1>
                     <p className="hero-subtitle">
-                        Experience the <strong>best graphics design</strong> and <strong>best LED design in Nagapattinam</strong>. Your trusted local hub in Thittacheri for <strong>E-Sevai services</strong>, custom stickers, and professional computer assistance, operated by Founder Shaher.
+                        Experience the <strong>best graphics design in Nagapattinam</strong> and <strong>best E-Sevai in Thittacheri</strong>. Your trusted <strong>Unique Brothers Nagapattinam</strong> digital service center for Aadhaar, PAN card, and professional <strong>computer center</strong> services, operated by Founder Shaher.
                     </p>
                     <div className="hero-btns">
                         <a href="#portfolio" className="btn-primary">View Our Work</a>

@@ -10,7 +10,7 @@ const Footer = () => {
                         <img src="/logo.svg" alt="Unique Brothers Logo" className="logo" />
                     </div>
                     <p className="footer-desc">
-                        The #1 destination for <strong>best LED design</strong>, <strong>best graphics design</strong>, and <strong>E-Sevai</strong> in Thittacheri & Nagapattinam. Professionally operated by Founder Shaher.
+                        The #1 destination for <strong>best e sevai center in Nagapattinam</strong>, <strong>best graphics design in Thittacheri</strong>, and <strong>computer center</strong> services. Professionally operated by Founder Shaher.
                     </p>
                 </div>
 
@@ -19,9 +19,9 @@ const Footer = () => {
                     <ul>
                         <li><a href="#">Thittacheri</a></li>
                         <li><a href="#">Nagapattinam</a></li>
-                        <li><a href="#">Mayiladurai</a></li>
-                        <li><a href="#">Thanjavur</a></li>
-                        <li><a href="#">Trichy</a></li>
+                        <li><a href="#">Nagore</a></li>
+                        <li><a href="#">Velankanni</a></li>
+                        <li><a href="#">Sikkal</a></li>
                         <li><a href="#">Karaikal</a></li>
                     </ul>
                 </div>

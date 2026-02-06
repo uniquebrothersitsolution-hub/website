@@ -4,14 +4,14 @@ import './Services.css';
 const services = [
     {
         title: "LED Sign Boards",
-        description: "Premium 3D LED, Acrylic, and Glow sign boards designed for maximum visibility.",
+        description: "Best LED design in Nagapattinam. Premium 3D LED, Acrylic, and Glow sign boards designed for maximum visibility.",
         icon: "💡",
         image: "/ai-led-sign-straight.png",
         tag: "Best Design"
     },
     {
-        title: "Smart Card Service",
-        description: "Your trusted E-Sevai center in Thittacheri. Correction, Adding/Removing members, and new applications for Family Smart Cards.",
+        title: "E-Sevai Center",
+        description: "The best e sevai in Thittacheri and Nagapattinam. Correction, Adding/Removing members, and new applications for Family Smart Cards.",
         icon: "🪪",
         image: "/smart-card.png",
         tag: "Pro Service"
@@ -24,8 +24,8 @@ const services = [
         tag: "Premium"
     },
     {
-        title: "Pan Card Service",
-        description: "Best PAN card services in Nagapattinam. New applications, name/photo correction, and DOB updates.",
+        title: "PAN Card Service",
+        description: "Best PAN card service in Thittacheri and Nagapattinam. New applications, name/photo correction, and DOB updates.",
         icon: "💳",
         image: "/pan-card.png",
         tag: "Instant"
@@ -51,8 +51,8 @@ const services = [
         tag: "Best Graphics Design"
     },
     {
-        title: "Computer Centre",
-        description: "The best computer centre in Thittacheri. Professional browsing, typing, and all online application services via E-Sevai.",
+        title: "Computer Center",
+        description: "The best computer center in Nagapattinam and Thittacheri. Professional browsing, typing, and all online exam registration via E-Sevai.",
         icon: "💻",
         tag: "Best Service"
     }
@@ -63,8 +63,8 @@ const Services = () => {
         <section id="services" className="services section-padding">
             <div className="container">
                 <div className="section-header">
-                    <h2 className="section-title">Our <span className="red">Expert</span> Services</h2>
-                    <p className="section-subtitle">We offer the <strong>best graphics design in Nagapattinam</strong> and a wide range of creative and utility services catering to your personal and business needs in Thittacheri.</p>
+                    <h2 className="section-title">Our <span className="red">Local</span> Services</h2>
+                    <p className="section-subtitle">We are the <strong>best e sevai center in Nagapattinam</strong> and provide the <strong>best graphics design in Thittacheri</strong>. Trusted digital service center near you for all online government services.</p>
                 </div>
                 <div className="services-grid">
                     {services.map((service, index) => (
