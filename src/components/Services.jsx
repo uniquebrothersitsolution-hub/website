@@ -46,15 +46,17 @@ const services = [
     },
     {
         title: "Unique Gifts",
-        description: "AI-powered personalized gift packing and custom designs. Experience the magic of AI-generated art on your special gifts for birthdays and anniversaries.",
+        description: "Personalized gift packing and custom items for birthdays, anniversaries, and more.",
         icon: "🎁",
-        tag: "AI Generated"
+        image: "/unique-gift.jpg",
+        tag: "Best Graphics Design"
     },
     {
         title: "Computer Center",
-        description: "Advanced AI-integrated computer services. Professional browsing, AI-driven typing assistance, and smart online registration for all competitive exams.",
+        description: "The best computer center in Nagapattinam and Thittacheri. Professional browsing, typing, and all online exam registration via E-Sevai.",
         icon: "💻",
-        tag: "AI Powered"
+        image: "/computer-center.jpg",
+        tag: "Best Service"
     }
 ];
 
