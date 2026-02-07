@@ -36,6 +36,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    color: #F1FAEE;
+    /* Force light text on dark overlay */
 }
 
 .portfolio-link {

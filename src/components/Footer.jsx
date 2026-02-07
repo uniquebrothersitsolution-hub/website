@@ -6,11 +6,12 @@ const Footer = () => {
         <footer className="footer">
             <div className="container footer-content">
                 <div className="footer-brand">
-                    <div className="logo-section">
-                        <img src="/logo.svg" alt="Unique Brothers Logo" className="logo" />
+                    <div className="logo-section flex items-center gap-4">
+                        <img src="/logo.png" alt="Unique Brothers Logo" className="logo" />
+                        <span className="brand-name">UNIQUE <span className="red">BROTHERS</span></span>
                     </div>
                     <p className="footer-desc">
-                        The #1 destination for <strong>best e sevai center in Nagapattinam</strong>, <strong>best graphics design in Thittacheri</strong>, and <strong>computer center</strong> services. Professionally operated by Founder Shaher.
+                        The #1 destination for <strong>best e sevai center in Nagapattinam</strong>, <strong>best personalized gifts</strong>, and <strong>computer center</strong> services. Your trusted <strong>digital service center near me</strong> for <strong>Aadhaar</strong>, <strong>PAN card</strong>, and <strong>custom handmade gifts</strong> in <strong>Thittacheri</strong>.
                     </p>
                 </div>
 

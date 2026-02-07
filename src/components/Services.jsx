@@ -43,20 +43,6 @@ const services = [
         icon: "💸",
         image: "/money-transfer.png",
         tag: "Fast"
-    },
-    {
-        title: "Unique Gifts",
-        description: "Personalized gift packing and custom items for birthdays, anniversaries, and more.",
-        icon: "🎁",
-        image: "/unique-gift.jpg",
-        tag: "Best Graphics Design"
-    },
-    {
-        title: "Computer Center",
-        description: "The best computer center in Nagapattinam and Thittacheri. Professional browsing, typing, and all online exam registration via E-Sevai.",
-        icon: "💻",
-        image: "/computer-center.jpg",
-        tag: "Best Service"
     }
 ];
 
@@ -80,6 +66,18 @@ const Services = () => {
                             <p className="service-card-desc">{service.description}</p>
                         </div>
                     ))}
+                </div>
+                <div className="seo-services-content container mt-5 opacity-75">
+                    <div className="seo-text-grid">
+                        <div className="seo-column">
+                            <h3>Best E-Sevai Center in Nagapattinam</h3>
+                            <p>Unique Brothers is the <strong>best e sevai center in Nagapattinam</strong> and <strong>Thittacheri</strong>. We offer comprehensive <strong>aadhaar card apply</strong>, <strong>aadhaar card update</strong>, and <strong>pan card apply</strong> services. Our <strong>digital service center</strong> handles everything from <strong>community certificate</strong> to <strong>income certificate</strong> and <strong>nativity certificate</strong> applications.</p>
+                        </div>
+                        <div className="seo-column">
+                            <h3>Online Govt Services & More</h3>
+                            <p>Need a <strong>new smart card</strong> or <strong>ration card correction</strong>? We are the trusted <strong>e sevai thittacheri</strong> point for <strong>voter id registration</strong>, <strong>passport application</strong>, and <strong>EB bill payment online</strong>. We also provide <strong>aadhar money withdrawal</strong> (AEPS), <strong>money transfer</strong>, and help with <strong>govt schemes apply</strong> like PM Kisan.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

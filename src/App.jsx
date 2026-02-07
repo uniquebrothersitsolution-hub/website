@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
+import HomePage from './pages/HomePage'
+import GiftPage from './pages/GiftPage'
 import Footer from './components/Footer'
 import './index.css'
 
@@ -19,26 +18,28 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <Services />
-        <Portfolio />
-        <Contact />
-      </main>
-      <Footer />
+    <Router>
+      <div className="app">
+        <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/gifts" element={<GiftPage />} />
+          </Routes>
+        </main>
+        <Footer />
 
-      {/* Floating WhatsApp Button for SEO and Conversion */}
-      <a
-        href="https://wa.me/918270150033"
-        className="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span className="whatsapp-icon">💬</span>
-      </a>
-    </div>
+        {/* Floating WhatsApp Button */}
+        <a
+          href="https://wa.me/918270150033"
+          className="whatsapp-float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="whatsapp-icon">💬</span>
+        </a>
+      </div>
+    </Router>
   )
 }
 
