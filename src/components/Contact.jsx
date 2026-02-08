@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Get In <span className="red">Touch</span></h2>
-                    <p className="section-subtitle">Your trusted <strong>digital service center near me</strong> for the best LED designs, e-sevai, and printing services in Nagapattinam. Contact us today for a quote!</p>
+                    <p className="section-subtitle">Your trusted <strong>digital service center in Thittacheri</strong> for the best LED designs, e-sevai, and printing services in Nagapattinam. Visit <strong>Unique Brothers Thittacheri</strong> today!</p>
                 </div>
 
                 <div className="contact-container">

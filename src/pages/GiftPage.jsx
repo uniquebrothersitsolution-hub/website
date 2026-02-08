@@ -95,7 +95,7 @@ const GiftCard = ({ gift }) => {
                 <img
                     key={currentImageIndex}
                     src={currentImage}
-                    alt={gift.title}
+                    alt={`Unique Brothers ${gift.title} - Best Personalized Gift in India`}
                     className="gift-img fade-in"
                     onError={(e) => {
                         e.target.src = `https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=2074&auto=format&fit=crop&text=${gift.title}`;

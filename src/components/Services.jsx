@@ -62,7 +62,7 @@ const Services = () => {
                                 <div className="service-icon">{service.icon}</div>
                                 <h3 className="service-card-title">{service.title}</h3>
                             </div>
-                            {service.image && <img src={service.image} alt={service.title} className="service-img-preview" />}
+                            {service.image && <img src={service.image} alt={`Unique Brothers ${service.title} - #1 Professional ${service.title === 'LED Sign Boards' ? 'Sign Board Maker' : 'Service'} in India`} className="service-img-preview" />}
                             <p className="service-card-desc">{service.description}</p>
                         </div>
                     ))}

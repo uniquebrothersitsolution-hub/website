@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className="hero-visual">
                     <div className="visual-card">
                         <div className="led-glow"></div>
-                        <img src="/hero-led-arabic.png" alt="Arabic LED Sign Board Design" className="hero-img" />
+                        <img src="/hero-led-arabic.png" alt="Unique Brothers - Best LED Sign Board Design and Professional Graphics in India" className="hero-img" />
                         <div className="visual-overlay">
                             <span>Premium LED Work</span>
                         </div>

@@ -19,7 +19,7 @@ const Portfolio = () => {
                 <div className="portfolio-grid">
                     {items.map((item, index) => (
                         <div key={index} className="portfolio-item">
-                            <img src={item.image} alt={item.title} className="portfolio-img" />
+                            <img src={item.image} alt={`Unique Brothers Portfolio: ${item.title}`} className="portfolio-img" />
                             <div className="portfolio-info">
                                 <span className="portfolio-cat">{item.category}</span>
                                 <h3 className="portfolio-item-title">{item.title}</h3>

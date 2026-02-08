@@ -16,13 +16,11 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-links">
-                    <h4>Our Regions</h4>
+                    <h4>Regions</h4>
                     <ul>
                         <li><a href="#">Thittacheri</a></li>
                         <li><a href="#">Nagapattinam</a></li>
                         <li><a href="#">Nagore</a></li>
-                        <li><a href="#">Velankanni</a></li>
-                        <li><a href="#">Sikkal</a></li>
                         <li><a href="#">Karaikal</a></li>
                     </ul>
                 </div>
