@@ -55,7 +55,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <NavLink to="/" hash="#home">Home</NavLink>
             <NavLink to="/" hash="#services">Services</NavLink>
             <NavLink to="/gifts" hash="#gifts">Gifts</NavLink>
-            <NavLink to="/" hash="#portfolio">Our Work</NavLink>
+            <NavLink to="/portfolio" hash="#portfolio">Creative Portfolio</NavLink>
             <NavLink to="/" hash="#contact">Contact</NavLink>
           </ul>
         </div>

@@ -41,7 +41,7 @@ const giftList = [
     }
 ];
 
-const GiftCard = ({ gift }) => {
+const GiftCard = ({ gift, onImageClick }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [touchStart, setTouchStart] = useState(null);
     const [touchEnd, setTouchEnd] = useState(null);
@@ -91,6 +91,7 @@ const GiftCard = ({ gift }) => {
                 onTouchStart={hasMultipleImages ? onTouchStart : undefined}
                 onTouchMove={hasMultipleImages ? onTouchMove : undefined}
                 onTouchEnd={hasMultipleImages ? onTouchEnd : undefined}
+                onClick={() => onImageClick(currentImage)}
             >
                 <img
                     key={currentImageIndex}
@@ -132,9 +133,67 @@ const GiftCard = ({ gift }) => {
 };
 
 const GiftPage = () => {
+    const [zoomIndex, setZoomIndex] = useState(null);
+    const [touchStartX, setTouchStartX] = useState(0);
+
+    // Create a flat list of all images for the gallery
+    const allGalleryImages = giftList.flatMap(gift =>
+        gift.images.map(img => ({ url: img, title: gift.title }))
+    );
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const openZoom = (imgUrl) => {
+        const index = allGalleryImages.findIndex(img => img.url === imgUrl);
+        setZoomIndex(index);
+        document.body.classList.add('no-scroll');
+    };
+
+    const closeZoom = () => {
+        setZoomIndex(null);
+        document.body.classList.remove('no-scroll');
+    };
+
+    const nextZoom = (e) => {
+        if (e) e.stopPropagation();
+        setZoomIndex((prev) => (prev + 1) % allGalleryImages.length);
+    };
+
+    const prevZoom = (e) => {
+        if (e) e.stopPropagation();
+        setZoomIndex((prev) => (prev - 1 + allGalleryImages.length) % allGalleryImages.length);
+    };
+
+    const [isSwiping, setIsSwiping] = useState(false);
+
+    // Touch handlers for swipe
+    const onTouchStart = (e) => {
+        setTouchStartX(e.touches[0].clientX);
+        setIsSwiping(false);
+    };
+
+    const onTouchMove = () => {
+        setIsSwiping(true);
+    };
+
+    const onTouchEnd = (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+        const threshold = 30; // Better sensitivity
+
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) nextZoom();
+            else prevZoom();
+        }
+    };
+
+    const handleOverlayClick = (e) => {
+        if (!isSwiping && e.target.classList.contains('image-zoom-overlay')) {
+            closeZoom();
+        }
+    };
 
     return (
         <div className="gift-page section-padding">
@@ -150,9 +209,32 @@ const GiftPage = () => {
 
                 <div className="gift-grid">
                     {giftList.map((gift) => (
-                        <GiftCard key={gift.id} gift={gift} />
+                        <GiftCard key={gift.id} gift={gift} onImageClick={openZoom} />
                     ))}
                 </div>
+
+                {/* Image Zoom Lightbox Gallery */}
+                {zoomIndex !== null && (
+                    <div
+                        className="image-zoom-overlay"
+                        onClick={handleOverlayClick}
+                        onTouchStart={onTouchStart}
+                        onTouchMove={onTouchMove}
+                        onTouchEnd={onTouchEnd}
+                    >
+                        <button className="zoom-nav-btn prev" onClick={prevZoom}>‹</button>
+                        <div className="image-zoom-content" onClick={(e) => e.stopPropagation()}>
+                            <button className="close-zoom" onClick={closeZoom}>✕</button>
+                            <img
+                                src={allGalleryImages[zoomIndex].url}
+                                alt={`${allGalleryImages[zoomIndex].title} zoom`}
+                                className="zoomed-image"
+                            />
+                            <div className="zoom-caption">{allGalleryImages[zoomIndex].title}</div>
+                        </div>
+                        <button className="zoom-nav-btn next" onClick={nextZoom}>›</button>
+                    </div>
+                )}
 
                 <div className="custom-request">
                     <h3>Have a special request?</h3>

@@ -61,6 +61,7 @@
     height: 250px;
     overflow: hidden;
     position: relative;
+    cursor: zoom-in;
 }
 
 .gift-img {
@@ -148,15 +149,22 @@
 }
 
 .back-link {
-    color: var(--text-muted);
+    background: var(--primary);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 12px;
     font-weight: 600;
     transition: var(--transition);
     display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.2);
 }
 
 .back-link:hover {
-    color: var(--primary);
-    transform: translateX(-5px);
+    background: #c92f3b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(230, 57, 70, 0.3);
 }
 
 .gift-footer {

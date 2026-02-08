@@ -81,6 +81,80 @@
     border-radius: 12px;
     margin-bottom: 1.5rem;
     border: 1px solid var(--border);
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.service-img-preview:hover {
+    transform: scale(1.02);
+}
+
+/* Image Zoom Lightbox Styles */
+.image-zoom-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    cursor: zoom-out;
+    animation: fadeInOverlay 0.3s ease;
+}
+
+.image-zoom-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 85vh;
+}
+
+.zoomed-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    animation: zoomInImage 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-zoom {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.close-zoom:hover {
+    transform: scale(1.2) rotate(90deg);
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomInImage {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .service-card-desc {

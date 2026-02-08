@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Services.css';
 
 const services = [
@@ -47,6 +47,18 @@ const services = [
 ];
 
 const Services = () => {
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const openZoom = (img) => {
+        setSelectedImage(img);
+        document.body.classList.add('no-scroll');
+    };
+
+    const closeZoom = () => {
+        setSelectedImage(null);
+        document.body.classList.remove('no-scroll');
+    };
+
     return (
         <section id="services" className="services section-padding">
             <div className="container">
@@ -62,11 +74,29 @@ const Services = () => {
                                 <div className="service-icon">{service.icon}</div>
                                 <h3 className="service-card-title">{service.title}</h3>
                             </div>
-                            {service.image && <img src={service.image} alt={`Unique Brothers ${service.title} - #1 Professional ${service.title === 'LED Sign Boards' ? 'Sign Board Maker' : 'Service'} in India`} className="service-img-preview" />}
+                            {service.image && (
+                                <img
+                                    src={service.image}
+                                    alt={service.title}
+                                    className="service-img-preview"
+                                    onClick={() => openZoom(service.image)}
+                                />
+                            )}
                             <p className="service-card-desc">{service.description}</p>
                         </div>
                     ))}
                 </div>
+
+                {/* Image Zoom Lightbox */}
+                {selectedImage && (
+                    <div className="image-zoom-overlay" onClick={closeZoom}>
+                        <div className="image-zoom-content">
+                            <button className="close-zoom" onClick={closeZoom}>✕</button>
+                            <img src={selectedImage} alt="Service detail zoom" className="zoomed-image" />
+                        </div>
+                    </div>
+                )}
+
                 <div className="seo-services-content container mt-5 opacity-75">
                     <div className="seo-text-grid">
                         <div className="seo-column">

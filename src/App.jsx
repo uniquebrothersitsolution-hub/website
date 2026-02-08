@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import GiftPage from './pages/GiftPage'
+import PortfolioPage from './pages/PortfolioPage'
 import Footer from './components/Footer'
 import './index.css'
 
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/gifts" element={<GiftPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
           </Routes>
         </main>
         <Footer />
