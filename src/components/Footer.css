@@ -16,6 +16,15 @@
     margin-bottom: 1.5rem;
 }
 
+.footer-brand .logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+    border: 1.5px solid var(--border);
+}
+
 .footer-desc {
     color: var(--text-muted);
     max-width: 400px;
