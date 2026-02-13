@@ -68,7 +68,7 @@ const GiftsPreview = () => {
                 </div>
 
                 <div className="preview-container">
-                    <div className="preview-card">
+                    <div className="preview-card reveal-right">
                         <div className="preview-img-wrapper">
                             <img
                                 src="/honiry-gift-logo.png"

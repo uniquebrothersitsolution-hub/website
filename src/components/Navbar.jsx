@@ -28,16 +28,15 @@ const Navbar = ({ theme, toggleTheme }) => {
   const NavLink = ({ to, children, hash }) => {
     const handleClick = (e) => {
       closeMenu();
-      if (isHomePage && hash) {
-        // Smooth scroll handled by browser default for hash links usually, 
-        // but we ensure menu closes first.
-      }
     };
 
     if (isHomePage && hash) {
       return <li><a href={hash} onClick={handleClick}>{children}</a></li>;
     }
-    return <li><Link to={to} onClick={handleClick}>{children}</Link></li>;
+
+    // If we have a hash and we're not on home page, include it in the link
+    const targetPath = hash ? `${to}${hash}` : to;
+    return <li><Link to={targetPath} onClick={handleClick}>{children}</Link></li>;
   };
 
   return (
@@ -55,7 +54,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <NavLink to="/" hash="#home">Home</NavLink>
             <NavLink to="/" hash="#services">Services</NavLink>
             <NavLink to="/gifts" hash="#gifts">Gifts</NavLink>
-            <NavLink to="/portfolio" hash="#portfolio">Creative Portfolio</NavLink>
+            <NavLink to="/portfolio" hash="#portfolio">Our Creative Gallery</NavLink>
             <NavLink to="/" hash="#contact">Contact</NavLink>
           </ul>
         </div>

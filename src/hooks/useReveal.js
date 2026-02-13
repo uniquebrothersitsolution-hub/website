@@ -1,0 +1,27 @@
+import { useEffect } from 'react';
+
+const useReveal = () => {
+    useEffect(() => {
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+        revealElements.forEach((el) => observer.observe(el));
+
+        return () => {
+            revealElements.forEach((el) => observer.unobserve(el));
+        };
+    }, []);
+};
+
+export default useReveal;

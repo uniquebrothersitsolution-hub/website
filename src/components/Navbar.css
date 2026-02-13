@@ -56,14 +56,33 @@
     gap: 2rem;
 }
 
-.nav-links a {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-muted);
+.nav-links li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: var(--transition);
+    position: relative;
+    padding: 5px 0;
 }
 
-.nav-links a:hover {
-    color: var(--text);
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary);
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
 }
 
 .btn-cta {

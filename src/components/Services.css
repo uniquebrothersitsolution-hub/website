@@ -47,6 +47,11 @@
     transform: translateY(-8px);
     border-color: var(--primary);
     background: var(--surface);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .service-card-header {

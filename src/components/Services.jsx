@@ -68,7 +68,7 @@ const Services = () => {
                 </div>
                 <div className="services-grid">
                     {services.map((service, index) => (
-                        <div key={index} className="service-card">
+                        <div key={index} className={`service-card reveal reveal-delay-${(index % 4) + 1}`}>
                             {service.tag && <span className="service-tag">{service.tag}</span>}
                             <div className="service-card-header">
                                 <div className="service-icon">{service.icon}</div>

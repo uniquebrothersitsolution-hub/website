@@ -190,7 +190,7 @@ const PortfolioCard = ({ item, onImageClick }) => {
                 <p className="portfolio-page-desc">{item.description}</p>
                 <div className="portfolio-page-footer">
                     <a
-                        href={`https://wa.me/918270150033?text=Hi, I'm interested in ordering a ${item.title} from your portfolio.`}
+                        href={`https://wa.me/918270150033?text=Hi, I'm interested in ordering a ${item.title} from your creative gallery.`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-order-whatsapp"
@@ -272,7 +272,7 @@ const PortfolioPage = () => {
                 </div>
 
                 <div className="page-header">
-                    <h1 className="gradient-text">Creative Portfolio</h1>
+                    <h1 className="gradient-text">Our Creative Gallery</h1>
                     <p className="page-subtitle">From professional signage to digital design, explore our wide range of creative solutions.</p>
                 </div>
 
@@ -344,7 +344,7 @@ const PortfolioPage = () => {
 
                     <section>
                         <h3>Serving Nagapattinam, Thittacheri and Surrounding Areas</h3>
-                        <p>Unique Brothers, portfolio services Nagapattinam, creative services Thittacheri, design services Tamil Nadu, printing services Nagapattinam district, branding agency Nagapattinam, advertising services Thittacheri, signage makers Nagapattinam, flex printing Thittacheri, LED boards Nagapattinam, name boards Thittacheri, business cards Nagapattinam, invitation cards Thittacheri, best portfolio Nagapattinam, top creative agency Nagapattinam, professional design services Nagapattinam, quality printing Thittacheri, affordable branding Nagapattinam, budget printing Thittacheri, premium design Nagapattinam, luxury branding services</p>
+                        <p>Unique Brothers, portfolio services Nagapattinam, our creative gallery Thittacheri, design services Tamil Nadu, printing services Nagapattinam district, branding agency Nagapattinam, advertising services Thittacheri, signage makers Nagapattinam, flex printing Thittacheri, LED boards Nagapattinam, name boards Thittacheri, business cards Nagapattinam, invitation cards Thittacheri, best portfolio Nagapattinam, top creative agency Nagapattinam, professional design services Nagapattinam, quality printing Thittacheri, affordable branding Nagapattinam, budget printing Thittacheri, premium design Nagapattinam, luxury branding services</p>
                     </section>
                 </div>
             </div>

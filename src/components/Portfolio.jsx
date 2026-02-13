@@ -65,28 +65,28 @@ const Portfolio = () => {
         <section id="portfolio" className="portfolio section-padding">
             <div className="container">
                 <div className="section-header">
-                    <h2 className="section-title">Creative <span className="blue">Portfolio</span></h2>
+                    <h2 className="section-title">Our Creative <span className="blue">Gallery</span></h2>
                     <p className="section-subtitle">A glimpse into our diverse range of professional design and signage projects.</p>
                 </div>
 
                 <div className="portfolio-preview-container">
-                    <div className="portfolio-preview-card">
+                    <div className="portfolio-preview-card reveal-left">
                         <div className="portfolio-preview-img-wrapper">
                             <img
                                 src="/ai-led-sign.png"
-                                alt="Creative Portfolio Preview"
+                                alt="Our Creative Gallery Preview"
                                 className="portfolio-preview-featured-img"
                                 onClick={() => openZoom("/ai-led-sign.png")}
                             />
                             <div className="portfolio-preview-overlay">
-                                <Link to="/portfolio" className="btn-cta">Explore Full Portfolio</Link>
+                                <Link to="/portfolio" className="btn-cta">Explore Our Creative Gallery</Link>
                             </div>
                         </div>
                         <div className="portfolio-preview-content">
                             <h3>A Glimpse of Our Creative Work</h3>
                             <p>From custom Name Boards to vibrant LED Signage and digital designs, we help businesses and homes stand out with premium quality.</p>
                             <Link to="/portfolio" className="view-link">
-                                <span>See Full Portfolio</span>
+                                <span>See Our Creative Gallery</span>
                                 <span className="view-link-icon">→</span>
                             </Link>
                         </div>
@@ -119,7 +119,7 @@ const Portfolio = () => {
 
             {/* Hidden SEO keywords for search engines */}
             <div style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }} aria-hidden="true">
-                <p>Portfolio services Nagapattinam, creative portfolio Thittacheri, design services Tamil Nadu, LED signage Nagapattinam, restaurant branding Nagapattinam, corporate identity Nagapattinam, event banners Nagapattinam, flex printing Thittacheri, business cards Nagapattinam, invitation cards Thittacheri, fashion advertising Nagapattinam, retail branding Thittacheri, professional design Nagapattinam, quality printing services, affordable creative solutions, premium branding agency, best portfolio Nagapattinam, top design studio Thittacheri</p>
+                <p>Portfolio services Nagapattinam, our creative gallery Thittacheri, design services Tamil Nadu, LED signage Nagapattinam, restaurant branding Nagapattinam, corporate identity Nagapattinam, event banners Nagapattinam, flex printing Thittacheri, business cards Nagapattinam, invitation cards Thittacheri, fashion advertising Nagapattinam, retail branding Thittacheri, professional design Nagapattinam, quality printing services, affordable creative solutions, premium branding agency, best portfolio Nagapattinam, top design studio Thittacheri</p>
             </div>
         </section>
     );

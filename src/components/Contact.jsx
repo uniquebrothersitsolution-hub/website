@@ -11,7 +11,7 @@ const Contact = () => {
                 </div>
 
                 <div className="contact-container">
-                    <div className="contact-info">
+                    <div className="contact-info reveal-left">
                         <a href="https://maps.app.goo.gl/6rGLtw517UEiZvex5?g_st=ic" target="_blank" rel="noopener noreferrer" className="info-item-link">
                             <div className="info-item">
                                 <span className="info-icon">📍</span>
@@ -45,7 +45,7 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+                    <form className="contact-form reveal-right" onSubmit={(e) => e.preventDefault()}>
                         <div className="form-group">
                             <input type="text" placeholder="Your Name" required />
                         </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                     </form>
                 </div>
 
-                <div className="map-section">
+                <div className="map-section reveal">
                     <div className="map-card">
                         <iframe
                             src="https://www.google.com/maps?q=Unique+Brothers+LED+Design+Thittacheri+90+Main+Road&output=embed"
